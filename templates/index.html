@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Flasky{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+	<h1>Olá, {% if name %}{{ name }}{% else %}Estranho{% endif %}!</h1>
+	<h2>A sua Instituição de ensino é {{instituicao}}</h2>
+	<h2>Está cursando a disciplina de {{disciplina}}</h2>
+	<h3>O IP do computador remoto é: {{ip}}</h3>
+	<h3>O host da aplicação é: {{host}}</h3>
+
+</div>
+{{ wtf.quick_form(form) }}
+{% endblock %}

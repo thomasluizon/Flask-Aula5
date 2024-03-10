@@ -1,0 +1,4 @@
+flask==3.0.0
+flask_Bootstrap==3.3.7.1
+flask_Moment==1.0.5
+flask_wtf==1.2.1
